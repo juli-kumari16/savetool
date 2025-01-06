@@ -1,0 +1,18 @@
+.page-section ul {
+  visibility: hidden;
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+
+.page-section:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+.slick-prev::before,
+.slick-next::before {
+  color: black;
+}
+
+.slick-dots li button::before {
+  color: blue;
+}
