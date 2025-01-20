@@ -33,6 +33,9 @@ import ScanPdf from "./Pages/ScanPdf";
 import OcrPdf from "./Pages/OcrPdf";
 import ComparePdf from "./Pages/ComparePdf";
 import RedactPdf from "./Pages/RedactPdf";
+import JpgToWebp from "./Pages/JpgToWebp";
+import ImageBgRemoval from "./Pages/ImageBgRemoval";
+import RemoveTextFromImage from "./Pages/RemoveTextFromImage";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -50,27 +53,39 @@ function App() {
             element={<WordToPdf />}
           />
           <Route path="pdf-to-word-converter" element={<PdfToWord />} />
-          <Route path="pdf_to_powerpoint" element={<PdfToPpt />} />
-          <Route path="pdf_to_excel" element={<PdfToExcel />} />
-          <Route path="powerpoint_to_pdf" element={<PptToPdf />} />
-          <Route path="excel_to_pdf" element={<ExcelToPdf />} />
-          <Route path="edit_to_pdf" element={<EditPdf />} />
-          <Route path="pdf_to_jpg" element={<PdfToJpg />} />
-          <Route path="jpg_to_pdf" element={<JpgToPdf />} />
-          <Route path="sign_pdf" element={<SignPdf />} />
-          <Route path="watermark" element={<WaterMark />} />
-          <Route path="rotate_pdf" element={<RotatePdf />} />
-          <Route path="html_to_pdf" element={<HtmlToPdf />} />
-          <Route path="unlock_pdf" element={<UnlockPdf />} />
-          <Route path="protect_pdf" element={<ProtectPdf />} />
-          <Route path="organize_pdf" element={<OrganizePdf />} />
-          <Route path="convert_pdf_to_pdfa" element={<PdfToPdfA />} />
-          <Route path="repair_pdf" element={<RepairPdf />} />
-          <Route path="add_pdf_page_number" element={<PageNoPdf />} />
-          <Route path="scan_to_pdf" element={<ScanPdf />} />
-          <Route path="ocr_pdf" element={<OcrPdf />} />
-          <Route path="compare_pdf" element={<ComparePdf />} />
-          <Route path="redact_pdf" element={<RedactPdf />} />
+          <Route path="pdf-to-powerpoint-converter" element={<PdfToPpt />} />
+          <Route
+            path="pdf-to-excel-converter-online-free"
+            element={<PdfToExcel />}
+          />
+          <Route path="Convert-ppt-to-pdf" element={<PptToPdf />} />
+          <Route
+            path="excel-to-pdf-converter-online-free"
+            element={<ExcelToPdf />}
+          />
+          <Route path="edit-pdf-online" element={<EditPdf />} />
+          <Route path="pdf-to-jpg-converter" element={<PdfToJpg />} />
+          <Route path="jpg-to-pdf-converter" element={<JpgToPdf />} />
+          <Route path="sign-pdf-online" element={<SignPdf />} />
+          <Route path="add-watermark-to-pdf" element={<WaterMark />} />
+          <Route path="rotate-pdf-online" element={<RotatePdf />} />
+          <Route path="convert-html-to-pdf" element={<HtmlToPdf />} />
+          <Route path="unlock-pdf" element={<UnlockPdf />} />
+          <Route path="protect-pdf" element={<ProtectPdf />} />
+          <Route path="organize-pdf" element={<OrganizePdf />} />
+          <Route path="convert-pdf-to-pdfa" element={<PdfToPdfA />} />
+          <Route path="repair-pdf-online" element={<RepairPdf />} />
+          <Route path="add-page-numbers-in-pdf" element={<PageNoPdf />} />
+          <Route path="scan-to-pdf-online" element={<ScanPdf />} />
+          <Route path="ocr-pdf-to-searcheable-file" element={<OcrPdf />} />
+          <Route path="compare-pdf-online" element={<ComparePdf />} />
+          <Route path="redact-pdf-online" element={<RedactPdf />} />
+          <Route path="jpg-to-webp" element={<JpgToWebp />} />
+          <Route path="image-background-remover" element={<ImageBgRemoval />} />
+          <Route
+            path="remove-text-from-an-Image"
+            element={<RemoveTextFromImage />}
+          />
         </Routes>
       </>
     </BrowserRouter>

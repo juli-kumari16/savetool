@@ -9,6 +9,8 @@ import about5 from "../images/fast_and _efficient.png";
 import about6 from "../images/perfect_for_office_ work.png";
 import faqsimg from "../images/faq.png";
 import Footer from "../Components/Footer";
+import ExploreMore from "../Components/ExploreMore";
+import WhatsApp from "../Components/WhatsApp";
 
 const CompressPdf = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -64,13 +66,13 @@ const CompressPdf = () => {
       <div>
         <Header />
       </div>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center px-4 sm:px-8">
         <div className="text-center">
           <div className="mb-10 mt-10">
-            <h1 className="text-4xl font-bold text-blue-900 mb-7">
+            <h1 className="lg:text-4xl sm:text-2xl xs:text-xl text-2xl font-bold text-blue-900 mb-7">
               Compress PDF: Same PDF, Better <br /> Quality, Less in File Size
             </h1>
-            <h2 className="text-3xl font-bold text-gray-700">
+            <h2 className="text-xl sm:text-3xl font-bold text-gray-700">
               Compress PDF file for easy to upload at Gov. <br /> official
               website.
             </h2>
@@ -78,7 +80,7 @@ const CompressPdf = () => {
               {/* Main Container */}
               <div className="flex items-center space-x-4">
                 {/* File Input Styled as a Button */}
-                <label className="bg-blue-700 hover:bg-blue-900 text-white text-2xl font-semibold px-16 py-6 rounded-lg shadow-lg cursor-pointer">
+                <label className="bg-blue-700 hover:bg-blue-900 text-white text-lg sm:text-2xl font-semibold px-10 sm:px-16 py-4 sm:py-6 rounded-lg shadow-lg cursor-pointer">
                   Select PDF files
                   <input type="file" className="hidden" multiple />
                 </label>
@@ -87,7 +89,7 @@ const CompressPdf = () => {
               {/* Drop PDFs Text */}
               <p className="mt-4 text-gray-600 text-sm">or drop PDFs here</p>
             </div>
-            <p className="text-base text-gray-600 pt-8 text-justify max-w-[600px] leading-relaxed">
+            <p className="text-base text-gray-600 pt-8 text-justify sm:text-center max-w-[700px] leading-relaxed px-4 sm:px-0 mx-auto">
               Reduce the file size of your PDF documents without compromising
               quality with SaveTools.net. Our online PDF compression tool
               ensures that your files retain their readability and appearance
@@ -99,11 +101,11 @@ const CompressPdf = () => {
       </div>
 
       {/* How to Compress PDF Online */}
-      <div className="mt-10 mx-20 ml-28">
-        <h3 className="text-blue-900 text-3xl font-bold">
-          How to Split PDF Online
+      <div className="mt-10 lg:ml-28 sm:mx-3 lg:mx-0 mx-4">
+        <h3 className="text-blue-900 lg:text-3xl font-bold">
+          How to Compress PDF Online
         </h3>
-        <div className="mt-5">
+        <div className="mt-5 sm:text-sm lg:text-base text-sm">
           <ul className="text-gray-700">
             <li className="py-1">
               1. &nbsp; &nbsp;{" "}
@@ -125,14 +127,14 @@ const CompressPdf = () => {
       </div>
       {/* Why Use SaveTools.net to Compress PDFs?? */}
       <div className="mt-20">
-        <h3 className="text-red-600 text-center text-3xl font-bold">
+        <h3 className="text-red-600 text-center lg:text-3xl font-bold">
           Why Use SaveTools.net to Compress PDFs?
         </h3>
         {/* First Row */}
-        <div className="flex flex-row mx-28 mt-10 gap-10 justify-center">
+        <div className="flex flex-col sm:flex-row flex-wrap mx-5 md:mx-28 mt-10 gap-10 justify-center">
           {/* Card 1 */}
-          <div className="flex p-4 bg-white rounded-lg shadow-lg border w-1/2 hover:bg-blue-900 group cursor-pointer">
-            <div className="w-24 h-auto">
+          <div className="flex flex-col sm:flex-row p-4 bg-white rounded-lg shadow-lg border w-full md:w-[48%] hover:bg-blue-500">
+            <div className="w-20 sm:w-24 md:w-32 lg:w-24 h-auto">
               <img
                 src={about3}
                 alt="Comprehensive Tools"
@@ -150,8 +152,8 @@ const CompressPdf = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="flex p-4 bg-white rounded-lg shadow-lg border w-1/2 hover:bg-blue-900 group cursor-pointer">
-            <div className="w-24 h-auto">
+          <div className="flex flex-col sm:flex-row p-4 bg-white rounded-lg shadow-lg border w-full md:w-[48%] hover:bg-blue-500">
+            <div className="w-20 sm:w-24 md:w-32 lg:w-24 h-auto">
               <img
                 src={about2}
                 alt="User-Friendly"
@@ -169,10 +171,10 @@ const CompressPdf = () => {
           </div>
         </div>
         {/* Second Row */}
-        <div className="flex flex-row mx-28 mt-10 gap-10 justify-center">
-          {/* Card 1 */}
-          <div className="flex p-4 bg-white rounded-lg shadow-lg border w-1/2 hover:bg-blue-900 group cursor-pointer">
-            <div className="w-28 h-auto">
+        <div className="flex flex-col sm:flex-row flex-wrap mx-5 md:mx-28 mt-10 gap-10 justify-center">
+          {/* Card 3 */}
+          <div className="flex flex-col sm:flex-row p-4 bg-white rounded-lg shadow-lg border w-full md:w-[48%] hover:bg-blue-500">
+            <div className="w-20 sm:w-24 md:w-32 lg:w-28 h-auto">
               <img
                 src={about6}
                 alt="Completely Free"
@@ -190,9 +192,9 @@ const CompressPdf = () => {
             </div>
           </div>
 
-          {/* Card 2 */}
-          <div className="flex p-4 bg-white rounded-lg shadow-lg border w-1/2 hover:bg-blue-900 group cursor-pointer">
-            <div className="w-32 h-auto">
+          {/* Card 4 */}
+          <div className="flex flex-col sm:flex-row p-4 bg-white rounded-lg shadow-lg border w-full md:w-[48%] hover:bg-blue-500">
+            <div className="w-20 sm:w-24 md:w-32 lg:w-32 h-auto">
               <img
                 src={about1}
                 alt="Secure and Reliable"
@@ -210,10 +212,10 @@ const CompressPdf = () => {
           </div>
         </div>
         {/* Third Row */}
-        <div className="flex flex-row mx-28 mt-10 gap-10 justify-center">
-          {/* Card 1 */}
-          <div className="flex p-4 bg-white rounded-lg shadow-lg border w-1/2 hover:bg-blue-900 group cursor-pointer">
-            <div className="w-28 h-auto">
+        <div className="flex flex-col sm:flex-row flex-wrap mx-5 md:mx-28 mt-10 gap-10 justify-center">
+          {/* Card 5 */}
+          <div className="flex flex-col sm:flex-row p-4 bg-white rounded-lg shadow-lg border w-full md:w-[48%] hover:bg-blue-500">
+            <div className="w-20 sm:w-24 md:w-32 lg:w-28 h-auto">
               <img
                 src={about5}
                 alt="Completely Free"
@@ -231,9 +233,9 @@ const CompressPdf = () => {
             </div>
           </div>
 
-          {/* Card 2 */}
-          <div className="flex p-4 bg-white rounded-lg shadow-lg border w-1/2 hover:bg-blue-900 group cursor-pointer">
-            <div className="w-24 h-auto">
+          {/* Card 6 */}
+          <div className="flex flex-col sm:flex-row p-4 bg-white rounded-lg shadow-lg border w-full md:w-[48%] hover:bg-blue-500">
+            <div className="w-20 sm:w-24 md:w-32 lg:w-24 h-auto">
               <img
                 src={about4}
                 alt="Secure and Reliable"
@@ -252,11 +254,11 @@ const CompressPdf = () => {
         </div>
       </div>
       {/* Key Features of Our PDF Compression Tool */}
-      <div className="mt-10 mx-20 ml-28">
-        <h3 className="text-blue-900 text-3xl font-bold">
+      <div className="mt-10 lg:ml-28 sm:mx-3 lg:mx-0 mx-4">
+        <h3 className="text-blue-900 lg:text-3xl font-bold">
           Key Features of Our PDF Compression Tool
         </h3>
-        <div className="mt-5">
+        <div className="mt-5 sm:text-sm lg:text-base text-sm">
           <ul className="text-gray-700">
             <li className="py-1">
               1. &nbsp; &nbsp;{" "}
@@ -281,7 +283,7 @@ const CompressPdf = () => {
             </li>
           </ul>
         </div>
-        <p className="pt-7 text-justify">
+        <p className="mt-5 text-gray-700 lg:text-base sm:text-sm text-sm text-justify sm:text-left max-w-[700px] leading-relaxed sm:leading-normal px-2 sm:px-0">
           With <strong className="text-blue-950">SaveTools.net,</strong> you can
           make your PDFs more compact while retaining the same <br /> content
           quality. This makes your documents easier to email, upload, and share
@@ -289,17 +291,23 @@ const CompressPdf = () => {
         </p>
       </div>
       {/* FAQs Section */}
-      <div className="mt-20">
-        <h3 className="text-blue-900 text-3xl font-bold pl-24">
-          FAQs for Word to PDF Converter Online
+      <div className="mt-20 lg:mx-10 sm:mx-4 mx-4">
+        <h3 className="lg:text-3xl sm:text-2xl text-2xl font-bold lg:pl-40">
+          Frequently Asked Questions (FAQs)
         </h3>
-        <div className="flex flex-row mb-5 pl-5">
-          <div className="mx-auto p-6 w-[50%]">
+        <div className="flex flex-col lg:flex-row-reverse mb-5">
+          {/* FAQ Image (on top for small screens, side by side for large screens) */}
+          <div className="lg:w-1/2 lg:-mt-24">
+            <img src={faqsimg} alt="FAQ Image" className="w-full" />
+          </div>
+
+          {/* FAQ Questions & Answers */}
+          <div className="mx-auto lg:p-6 w-full lg:w-1/2">
             {faqs.map((faq, index) => (
               <div key={index} className="border-b border-gray-300 py-2">
                 {/* Question Section */}
                 <div className="flex items-center justify-between">
-                  <h4 className="text-base font-medium text-blue-800">
+                  <h4 className="text-sm font-medium text-gray-800">
                     {faq.question}
                   </h4>
                   <button
@@ -312,15 +320,21 @@ const CompressPdf = () => {
 
                 {/* Answer Section */}
                 {openIndex === index && (
-                  <p className="text-gray-600 mt-3 text-base">{faq.answer}</p>
+                  <p className="text-gray-600 mt-3 text-sm">{faq.answer}</p>
                 )}
               </div>
             ))}
           </div>
-          <div className="">
-            <img src={faqsimg} alt="" className="" />
-          </div>
         </div>
+      </div>
+      {/* Explore More */}
+      <div>
+        <ExploreMore />
+      </div>
+
+      {/* WhatsApp */}
+      <div>
+        <WhatsApp />
       </div>
       {/* Footer Section */}
       <div>

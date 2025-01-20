@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Header from "../Components/Header";
 import SEOComponent from "../Components/SEOComponent";
+import Header from "../Components/Header";
 import about1 from "../images/comprehensive _tool.png";
 import about2 from "../images/user- friendly.png";
 import about3 from "../images/completely _free.png";
@@ -12,33 +12,52 @@ import Footer from "../Components/Footer";
 import ExploreMore from "../Components/ExploreMore";
 import WhatsApp from "../Components/WhatsApp";
 
-const PageNoPdf = () => {
+const JpgToWebp = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const faqs = [
     {
-      question: "1. Can I use this tool for free?",
+      question: "1. What is WebP?",
       answer:
-        "Yes, the Add Page Numbers tool on savetools.net is completely free to use.",
+        "WebP is a modern image format developed by Google that provides superior compression for images, reducing file size without compromising quality.",
     },
     {
-      question: "2. Can I choose where the page numbers appear?",
-      answer:
-        "Absolutely! You can place the numbers at the top or bottom of the page, aligned to the left, center, or right.",
+      question: "2. Is this tool free to use?",
+      answer: "Yes, the JPG to WebP tool on savetools.net is completely free.",
     },
     {
-      question: "3. Can I exclude certain pages from numbering?",
+      question: "3. Can I convert multiple JPG files at once?",
       answer:
-        "Yes, you can select specific page ranges to include or exclude from numbering.",
+        "Yes, the tool supports batch conversion, allowing you to upload and convert multiple images simultaneously.",
     },
     {
-      question: "4. Can I format the page numbers?",
+      question: "4. Is there a file size limit for uploads?",
       answer:
-        "Yes, you can customize the font style, size, and color to match your document’s look.",
+        "Yes, the maximum file size is X MB (specify the limit). Larger images can be resized before uploading.",
     },
     {
-      question: "5. Is there a limit to the number of pages I can number?",
+      question: "5. Does this tool work on mobile devices?",
       answer:
-        "The tool supports files up to X pages or X MB (specify the limit).",
+        "Absolutely! You can use this tool on any device with a web browser.",
+    },
+    {
+      question: "6. Can I adjust the quality of the WebP files?",
+      answer:
+        "Yes, you can customize the compression level to balance file size and image quality.",
+    },
+    {
+      question: "7. Will the converted images lose quality?",
+      answer:
+        "No, the tool ensures high-quality output while minimizing file size. You can also adjust settings to prioritize quality.",
+    },
+    {
+      question: "8. Are my files secure?",
+      answer:
+        "Yes, your files are processed on secure servers and automatically deleted after the conversion.",
+    },
+    {
+      question: "9. Why should I convert JPG to WebP?",
+      answer:
+        "WebP offers smaller file sizes compared to JPG while maintaining quality, making it an ideal format for websites and online use.",
     },
   ];
   const toggleAnswer = (index) => {
@@ -48,8 +67,8 @@ const PageNoPdf = () => {
     <div>
       <div>
         <SEOComponent
-          title="Add Page Numbers in PDF Files Online Free, Unlimited"
-          description="Organize your PDF with page numbers using SaveTools.net. Add numbers to your PDF for free - customize position, style, and format in just a few clicks!"
+          title="Convert JPG to WebP Free Online at Savetools.net"
+          description="convert JPG images to WebP format effortlessly. Optimize your website’s performance with this step-by-step guide to faster-loading, high-quality visuals."
         />
               
       </div>
@@ -60,13 +79,10 @@ const PageNoPdf = () => {
         <div className="text-center">
           <div className="mb-10 mt-10">
             <h1 className="lg:text-4xl sm:text-2xl xs:text-xl text-2xl font-bold text-blue-900 mb-7">
-              Add Page Numbers in PDFs
+              Convert JPG to WebP Free
             </h1>
             <h2 className="text-xl sm:text-3xl font-bold text-gray-700">
-              Insert page numbers into your PDF files. <br /> Customize
-              position, size, and font to suit your needs. <br />
-              Insert page numbers into your PDF files. <br /> Customize
-              position, size, and font to suit your needs.
+              JPG to WebP: <br /> Convert Images to a High-Quality Format
             </h2>
           </div>
           <div className="flex flex-col items-center justify-center">
@@ -74,7 +90,7 @@ const PageNoPdf = () => {
             <div className="flex items-center space-x-4">
               {/* File Input Styled as a Button */}
               <label className="bg-blue-700 hover:bg-blue-900 text-white text-lg sm:text-2xl font-semibold px-10 sm:px-16 py-4 sm:py-6 rounded-lg shadow-lg cursor-pointer">
-                Select PDF File
+                Select JPG images
                 <input type="file" className="hidden" multiple />
               </label>
             </div>
@@ -88,76 +104,63 @@ const PageNoPdf = () => {
             <span>Pasting the code</span>
           </div> */}
           <h2 className="lg:text-3xl font-bold text-gray-700 mt-10">
-            Why Add Page Numbers to Your PDF?
+            What is the JPG to WebP Tool?
           </h2>
           <p className="text-base text-gray-600 pt-8 text-justify sm:text-center max-w-[700px] leading-relaxed px-4 sm:px-0 mx-auto">
-            Page numbers enhance the structure and readability of your PDF
-            documents, making them easier to reference, navigate, and share.
-            Whether you’re working on reports, eBooks, or academic papers,
-            adding page numbers ensures a professional and organized
-            presentation.
+            The <strong className="text-blue-950">JPG to WebP</strong> tool lets
+            you convert your JPG images into the WebP format, a modern image
+            format designed for faster loading and better compression. WebP
+            files maintain high quality while significantly reducing file size,
+            making them ideal for websites and online sharing.
           </p>
         </div>
       </div>
 
-      {/* How to Use the Add Page Numbers Tool?*/}
+      {/* How to Use the OCR PDF Tool? */}
       <div className="mt-10 lg:ml-28 sm:mx-3 lg:mx-0 mx-4">
-        <h3 className="text-blue-900 text-3xl font-bold pb-5">
-          How to Use the Add Page Numbers Tool?
+        <h3 className="text-blue-900 lg:text-3xl font-bold">
+          How to Use the JPG to WebP Tool?
         </h3>
-        <div className="sm:text-sm lg:text-base text-sm">
+        <div className="mt-5 sm:text-sm lg:text-base text-sm">
           <ul className="text-gray-700">
             <li className="py-1">
               1. &nbsp; &nbsp;{" "}
-              <strong className="text-blue-950">Upload Your PDF : </strong> Drag
-              and drop your file or click the upload button to upload your PDF.
+              <strong className="text-blue-950">Upload Your JPG Files: </strong>{" "}
+              Drag and drop your images or click the upload button to select
+              files from your device.
             </li>
             <li className="py-1">
               2. &nbsp; &nbsp;{" "}
               <strong className="text-blue-950">
-                Customize Page Numbers:{" "}
+                Adjust Quality Settings (Optional):{" "}
               </strong>{" "}
-              <ul className="list-decimal pl-20 lg:text-lg text-sm sm:text-sm">
-                <li className="list-disc">
-                  Select the <strong className="text-blue-950">position</strong>{" "}
-                  (top-left, top-center, bottom-right, etc.).
-                </li>
-                <li className="list-disc">
-                  Choose the{" "}
-                  <strong className="text-blue-950">font style</strong> and{" "}
-                  <strong className="text-blue-950">size</strong>.
-                </li>
-                <li className="list-disc">
-                  Specify the{" "}
-                  <strong className="text-blue-950">page range </strong>(e.g.,
-                  start from page 2 or number specific sections).
-                </li>
-              </ul>
+              Choose your desired compression level for optimal file size and
+              quality.
             </li>
             <li className="py-1">
               3. &nbsp; &nbsp;{" "}
-              <strong className="text-blue-950">Apply Changes: </strong> Make
-              edits and download your organized PDF.
+              <strong className="text-blue-950">Convert to WebP : </strong>
+              Click the "Convert" button to start the process.
             </li>
             <li className="py-1">
               4. &nbsp; &nbsp;{" "}
-              <strong className="text-blue-950">Download: </strong> Save your
-              updated PDF with the page numbers added.
+              <strong className="text-blue-950">Download : </strong>
+              4.Save the converted WebP files to your device.
             </li>
           </ul>
         </div>
       </div>
 
-      {/* Features of the Add Page Numbers Tool */}
+      {/* Features of the JPG to WebP Tool */}
       <div className="mt-20">
-        <h2 className="text-red-600 text-center lg:text-3xl font-bold mx-3">
-          Features of the Add Page Numbers Tool
+        <h2 className="text-red-600 text-center lg:text-3xl font-bold">
+          Features of the JPG to WebP Tool
         </h2>
         {/* First Row */}
         <div className="flex flex-col sm:flex-row flex-wrap mx-5 md:mx-28 mt-10 gap-10 justify-center">
           {/* Card 1 */}
           <div className="flex flex-col sm:flex-row p-4 bg-white rounded-lg shadow-lg border w-full md:w-[48%] hover:bg-blue-500">
-            <div className="w-20 sm:w-24 md:w-32 lg:w-32 h-auto">
+            <div className="w-20 sm:w-24 md:w-32 lg:w-24 h-auto">
               <img
                 src={about5}
                 alt="Comprehensive Tools"
@@ -166,18 +169,17 @@ const PageNoPdf = () => {
             </div>
             <div className="flex flex-col justify-center mx-5">
               <h4 className="text-lg font-bold text-gray-800 mb-2">
-                Customizable Placement
+                High-Quality Conversion
               </h4>
               <p className="text-gray-600 text-sm font-playfair">
-                Add page numbers to the top or bottom of the page in the left,
-                center, or right alignment.
+                Retains image clarity and detail while reducing file size.
               </p>
             </div>
           </div>
 
           {/* Card 2 */}
           <div className="flex flex-col sm:flex-row p-4 bg-white rounded-lg shadow-lg border w-full md:w-[48%] hover:bg-blue-500">
-            <div className="w-20 sm:w-24 md:w-32 lg:w-28 h-auto">
+            <div className="w-20 sm:w-24 md:w-32 lg:w-24 h-auto">
               <img
                 src={about2}
                 alt="User-Friendly"
@@ -186,11 +188,10 @@ const PageNoPdf = () => {
             </div>
             <div className="flex flex-col justify-center mx-5">
               <h4 className="text-lg font-bold text-gray-800 mb-2">
-                Flexible Styling
+                Batch Conversion
               </h4>
               <p className="text-gray-600 text-sm font-playfair">
-                Choose font type, size, and color to match your document’s
-                design.
+                Upload and convert multiple JPG files simultaneously.
               </p>
             </div>
           </div>
@@ -208,10 +209,10 @@ const PageNoPdf = () => {
             </div>
             <div className="flex flex-col justify-center mx-5">
               <h4 className="text-lg font-bold text-gray-800 mb-2">
-                Page Range Options
+                Custom Compression Options
               </h4>
               <p className="text-gray-600 text-sm font-playfair">
-                Add page numbers to specific sections or exclude certain pages.
+                Control the balance between image quality and file size.
               </p>
             </div>
           </div>
@@ -227,10 +228,10 @@ const PageNoPdf = () => {
             </div>
             <div className="flex flex-col justify-center mx-5">
               <h4 className="text-lg font-bold text-gray-800 mb-2">
-                Easy-to-Use Interface
+                Fast and Efficient
               </h4>
               <p className="text-gray-600 text-sm font-playfair">
-                Simple, intuitive steps to number your PDF pages.
+                Complete the conversion process in seconds.
               </p>
             </div>
           </div>
@@ -248,10 +249,10 @@ const PageNoPdf = () => {
             </div>
             <div className="flex flex-col justify-center mx-5">
               <h4 className="text-lg font-bold text-gray-800 mb-2">
-                Cross-Device Support
+                Cross-Device Compatibility
               </h4>
               <p className="text-gray-600 text-sm font-playfair">
-                Works on desktops, tablets, and smartphones.
+                Works seamlessly on desktop, tablet, and mobile devices.
               </p>
             </div>
           </div>
@@ -267,36 +268,39 @@ const PageNoPdf = () => {
             </div>
             <div className="flex flex-col justify-center mx-5">
               <h4 className="text-lg font-bold text-gray-800 mb-2">
-                Secure and Private
+                Secure Processing:
               </h4>
               <p className="text-gray-600 text-sm font-playfair">
-                Your files are processed securely and deleted after use.
+                Files are encrypted during upload and deleted after conversion.
               </p>
             </div>
           </div>
         </div>
       </div>
-
-      {/* Benefits of Adding Page Numbers */}
+      {/* Benefits of Converting JPG to WebP */}
       <div className="mt-10 lg:ml-28 sm:mx-3 lg:mx-0 mx-4">
         <h3 className="text-blue-900 lg:text-3xl font-bold">
-          Benefits of Adding Page Numbers
+          Benefits of Converting JPG to WebP
         </h3>
         <div className="mt-5 sm:text-sm lg:text-base text-sm ml-8">
           <ul className="text-gray-700">
             <li className="py-1 list-disc">
-              Makes your document more professional and organized.
+              <strong>Faster Loading Times : </strong>
+              Smaller file sizes mean quicker loading on websites and apps.
             </li>
             <li className="py-1 list-disc">
-              Simplifies referencing in presentations, meetings, or academic
-              submissions.
+              <strong>Reduced Bandwidth Usage : </strong>
+              Save storage and data by optimizing images.
             </li>
             <li className="py-1 list-disc">
-              Improves navigation in lengthy PDF files.
+              <strong>Enhanced User Experience : </strong>
+              Modern WebP format is supported by most browsers, ensuring better
+              performance.
             </li>
             <li className="py-1 list-disc">
-              Helps you comply with document standards for submissions or
-              publications.
+              <strong>SEO-Friendly : </strong>
+              Improve page speed, which is a critical factor for search engine
+              rankings.
             </li>
           </ul>
         </div>
@@ -305,7 +309,7 @@ const PageNoPdf = () => {
       {/* FAQs Section */}
       <div className="mt-20 lg:mx-10 sm:mx-4 mx-4">
         <h3 className="lg:text-3xl sm:text-2xl text-2xl font-bold lg:pl-40">
-          FAQs: Add Page Numbers Tool
+          FAQs: JPG to WebP Tool
         </h3>
         <div className="flex flex-col lg:flex-row-reverse mb-5">
           {/* FAQ Image (on top for small screens, side by side for large screens) */}
@@ -357,4 +361,4 @@ const PageNoPdf = () => {
   );
 };
 
-export default PageNoPdf;
+export default JpgToWebp;

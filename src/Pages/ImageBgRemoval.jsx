@@ -12,33 +12,32 @@ import Footer from "../Components/Footer";
 import ExploreMore from "../Components/ExploreMore";
 import WhatsApp from "../Components/WhatsApp";
 
-const RedactPdf = () => {
+const ImageBgRemoval = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const faqs = [
     {
-      question: "1. Is the redaction permanent?",
+      question: "1. Is Savetools.net’s background removal tool free?",
       answer:
-        "Yes, once you apply redaction and save the file, the removed content is permanently deleted and cannot be recovered.",
+        "Yes, it’s completely free to use with no hidden costs or limitations..",
     },
     {
-      question: "2. Is this tool free to use?",
+      question: "2. What file formats can I upload?",
       answer:
-        "Yes, the Redact PDF tool on savetools.net is free with no hidden charges.",
+        "You can upload images in common formats like PNG, JPEG, and JPG.",
     },
     {
-      question: "3. Can I redact multiple areas in the same PDF?",
-      answer:
-        "Yes, you can mark and redact multiple sections within a single file.",
+      question: "3. Is there a limit to the number of images I can process?",
+      answer: "No, you can process unlimited images without restrictions.",
     },
     {
-      question: "4. Does this tool work on scanned PDFs?",
+      question: "4. Can I replace the background after removing it?",
       answer:
-        "For scanned PDFs, you’ll need to use our OCR PDF tool first to make the text selectable before redacting.",
+        "Yes! After removing the background, you can download the image with a transparent background or replace it with a solid color or new background.",
     },
     {
-      question: "5. Is there a limit to the file size I can redact?",
+      question: "5. Do I need to install any software?",
       answer:
-        "Yes, the maximum file size is X MB (specify the limit). Larger files can be split or compressed before uploading.",
+        "No downloads or installations are required. Everything is done online through your browser.",
     },
   ];
   const toggleAnswer = (index) => {
@@ -48,8 +47,8 @@ const RedactPdf = () => {
     <div>
       <div>
         <SEOComponent
-          title=" Redact PDF: Easy & Fast PDF Redaction - Remove Sensitive Data "
-          description="Quickly and easily redact sensitive information from your PDFs with Redact PDF. Our user-friendly tool helps you protect your privacy and comply with regulations."
+          title=" Image background remover Online Free | Unlimited | Savetools"
+          description="Image background remover online free tools. Savetools.net remove your image back perfectly in few seconds. Try it now. No registration required! "
         />
               
       </div>
@@ -60,10 +59,11 @@ const RedactPdf = () => {
         <div className="text-center">
           <div className="mb-10 mt-10">
             <h1 className="lg:text-4xl sm:text-2xl xs:text-xl text-2xl font-bold text-blue-900 mb-7">
-              Redact PDF Online
+              Image background remover online
             </h1>
             <h2 className="text-xl sm:text-3xl font-bold text-gray-700">
-              Redact PDF: Protect Sensitive Information
+              Background remover is the perfect tool <br /> for Editing photos
+              for social media
             </h2>
           </div>
           <div className="flex flex-col items-center justify-center">
@@ -71,7 +71,7 @@ const RedactPdf = () => {
             <div className="flex items-center space-x-4">
               {/* File Input Styled as a Button */}
               <label className="bg-blue-700 hover:bg-blue-900 text-white text-lg sm:text-2xl font-semibold px-10 sm:px-16 py-4 sm:py-6 rounded-lg shadow-lg cursor-pointer">
-                Select PDF File
+                Select Images
                 <input type="file" className="hidden" multiple />
               </label>
             </div>
@@ -79,87 +79,53 @@ const RedactPdf = () => {
             {/* Drop PDFs Text */}
             <p className="mt-4 text-gray-600 text-sm">or drop PDFs here</p>
           </div>
-          {/* <div class="flex text-red-500 font-bold text-lg items-center justify-center mt-5 sm:text-sm lg:text-base text-sm ">
-            <span>Pasting the URL</span>
-            <span className="mx-2">|</span>
-            <span>Pasting the code</span>
-          </div> */}
           <h2 className="lg:text-3xl font-bold text-gray-700 mt-10">
-            What is the Redact PDF Tool?
+            Remove Backgrounds from Images <br /> Instantly with Savetools.net
           </h2>
-          <p className="text-base text-gray-600 pt-8 text-justify sm:text-center max-w-[700px] leading-relaxed px-4 sm:px-0 mx-auto">
-            The Redact PDF tool allows you to securely remove or hide sensitive
-            information, such as personal details, financial data, or
-            confidential content, from your PDF documents. It ensures privacy
-            and compliance when sharing or publishing files.
-          </p>
         </div>
       </div>
-
-      {/* How to Use the Compare PDF Tool? */}
-      <div className="mt-10 lg:ml-28 sm:mx-3 lg:mx-0 mx-4">
-        <h3 className="text-blue-900 lg:text-3xl font-bold">
-          How to Use the Redact PDF Tool?
+      <div className=" mt-10 lg:ml-28 sm:mx-3 lg:mx-0 mx-4">
+        <h3 className="lg:text-2xl font-bold text-blue-950">
+          Effortless Background Removal in Seconds
         </h3>
-        <div className="mt-5 sm:text-sm lg:text-base text-sm">
-          <ul className="text-gray-700">
-            <li className="py-1">
-              1. &nbsp; &nbsp;{" "}
-              <strong className="text-blue-950">Upload Your PDF : </strong> Drag
-              and drop your file or click the upload button to select the PDF
-              you want to redact.
-            </li>
-            <li className="py-1">
-              2. &nbsp; &nbsp;{" "}
-              <strong className="text-blue-950">Highlight Content : </strong>{" "}
-              Use the redaction tool to mark the text, images, or sections to be
-              hidden.
-            </li>
-            <li className="py-1">
-              3. &nbsp; &nbsp;{" "}
-              <strong className="text-blue-950">Apply Redaction : </strong>
-              Click the "Apply Redaction" button to permanently remove the
-              selected content.
-            </li>
-            <li className="py-1">
-              3. &nbsp; &nbsp;{" "}
-              <strong className="text-blue-950">Download : </strong>
-              Save your newly redacted file securely to your device.
-            </li>
-          </ul>
-        </div>
+        <span className="lg:text-base sm:text-sm text-sm  text-gray-600 pt-8 text-justify sm:text-center max-w-[700px] leading-relaxed px-4 sm:px-0 mx-auto">
+          Do you need to remove the background from your images? Savetools.net
+          makes background <br /> removal fast, easy, and accurate. Our advanced
+          AI-powered tool does the work for you — <br /> no complicated software
+          or design skills required!
+        </span>
       </div>
 
-      {/* Why Choose Save Tool Start Here */}
+      {/* Why Choose Savetools.net for Background Removal? */}
       <div className="mt-20">
-        <h2 className="text-red-600 text-center text-3xl font-bold">
-          Features of the Redact PDF Tool
-        </h2>
+        <h3 className="text-red-600 text-center lg:text-2xl font-bold">
+          Why Choose Savetools.net for Background Removal?
+        </h3>
         {/* First Row */}
         <div className="flex flex-col sm:flex-row flex-wrap mx-5 md:mx-28 mt-10 gap-10 justify-center">
           {/* Card 1 */}
           <div className="flex flex-col sm:flex-row p-4 bg-white rounded-lg shadow-lg border w-full md:w-[48%] hover:bg-blue-500">
-            <div className="w-20 sm:w-24 md:w-32 lg:w-32 h-auto">
+            <div className="w-20 sm:w-24 md:w-32 lg:w-24 h-auto">
               <img
-                src={about6}
+                src={about5}
                 alt="Comprehensive Tools"
                 className="mr-4 w-full h-auto"
               />
             </div>
             <div className="flex flex-col justify-center mx-5">
               <h4 className="text-lg font-bold text-gray-800 mb-2">
-                Complete Redaction
+                Fast and Automatic
               </h4>
               <p className="text-gray-600 text-sm font-playfair">
-                Permanently removes selected text, images, or data, ensuring it
-                cannot be recovered.
+                Remove backgrounds with a single click. No manual editing or
+                complex steps.
               </p>
             </div>
           </div>
 
           {/* Card 2 */}
           <div className="flex flex-col sm:flex-row p-4 bg-white rounded-lg shadow-lg border w-full md:w-[48%] hover:bg-blue-500">
-            <div className="w-20 sm:w-24 md:w-32 lg:w-24 h-auto">
+            <div className="w-20 sm:w-24 md:w-32 lg:w-28 h-auto">
               <img
                 src={about2}
                 alt="User-Friendly"
@@ -168,10 +134,11 @@ const RedactPdf = () => {
             </div>
             <div className="flex flex-col justify-center mx-5">
               <h4 className="text-lg font-bold text-gray-800 mb-2">
-                Customizable Options
+                High-Quality Results
               </h4>
               <p className="text-gray-600 text-sm font-playfair">
-                Redact using black bars, white spaces, or custom colors.
+                Maintain image clarity and detail with pixel-perfect background
+                extraction.
               </p>
             </div>
           </div>
@@ -180,20 +147,19 @@ const RedactPdf = () => {
         <div className="flex flex-col sm:flex-row flex-wrap mx-5 md:mx-28 mt-10 gap-10 justify-center">
           {/* Card 1 */}
           <div className="flex flex-col sm:flex-row p-4 bg-white rounded-lg shadow-lg border w-full md:w-[48%] hover:bg-blue-500">
-            <div className="w-20 sm:w-24 md:w-32 lg:w-32 h-auto">
+            <div className="w-20 sm:w-24 md:w-32 lg:w-24 h-auto">
               <img
-                src={about4}
+                src={about6}
                 alt="Completely Free"
                 className="mr-4 w-full h-auto"
               />
             </div>
             <div className="flex flex-col justify-center mx-5">
               <h4 className="text-lg font-bold text-gray-800 mb-2">
-                Secure Sharing
+                Supports Multiple Formats
               </h4>
               <p className="text-gray-600 text-sm font-playfair">
-                Ensures your document is safe to share without revealing
-                sensitive content.
+                Works with popular formats like PNG, JPEG, and more.
               </p>
             </div>
           </div>
@@ -209,78 +175,110 @@ const RedactPdf = () => {
             </div>
             <div className="flex flex-col justify-center mx-5">
               <h4 className="text-lg font-bold text-gray-800 mb-2">
-                Cross-Device Compatibility
+                Completely Free
               </h4>
               <p className="text-gray-600 text-sm font-playfair">
-                Use on desktops, tablets, or mobile devices.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Third Row */}
-        <div className="flex flex-col sm:flex-row flex-wrap mx-5 md:mx-28 mt-10 gap-10 justify-center">
-          {/* Card 1 */}
-          <div className="flex flex-col sm:flex-row p-4 bg-white rounded-lg shadow-lg border w-full md:w-[48%] hover:bg-blue-500">
-            <div className="w-20 sm:w-24 md:w-32 lg:w-24 h-auto">
-              <img
-                src={about1}
-                alt="Fast and Efficient"
-                className="mr-4 w-full h-auto"
-              />
-            </div>
-            <div className="flex flex-col justify-center mx-5">
-              <h4 className="text-lg font-bold text-gray-800 mb-2">
-                Simple Interface
-              </h4>
-              <p className="text-gray-600 text-sm font-playfair">
-                Intuitive and easy to use, even for beginners.
-              </p>
-            </div>
-          </div>
-
-          {/* Card 2 */}
-          <div className="flex flex-col sm:flex-row p-4 bg-white rounded-lg shadow-lg border w-full md:w-[48%] hover:bg-blue-500">
-            <div className="w-20 sm:w-24 md:w-32 lg:w-32 h-auto">
-              <img
-                src={about5}
-                alt="Perfect for Office / Personal Work"
-                className="mr-4 w-full h-auto"
-              />
-            </div>
-            <div className="flex flex-col justify-center mx-5">
-              <h4 className="text-lg font-bold text-gray-800 mb-2">
-                Encrypted Processing
-              </h4>
-              <p className="text-gray-600 text-sm font-playfair">
-                Protects your files during the redaction process and deletes
-                them after use.
+                Enjoy professional background removal at no cost.
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Benefits of Comparing PDFs */}
+      {/*  Perfect for Every Use Case */}
       <div className="mt-10 lg:ml-28 sm:mx-3 lg:mx-0 mx-4">
-        <h3 className="text-blue-900 lg:text-3xl font-bold">
-          When to Use the Redact PDF Tool?
+        <h3 className="text-blue-900 lg:text-2xl font-bold">
+          Perfect for Every Use Case
         </h3>
-        <div className="mt-5 sm:text-sm lg:text-base text-sm ml-8">
+        <h4 className="text-gray-900 lg:text-xl font-semibold mt-3 ">
+          Our background remover is ideal for:
+        </h4>
+        <div className="mt-2 ml-7 sm:text-sm lg:text-base text-sm">
           <ul className="text-gray-700">
             <li className="py-1 list-disc">
-              To remove personal identifiers like names, addresses, or social
-              security numbers.
+              <strong className="text-blue-950">
+                E-commerce and Product Photos :{" "}
+              </strong>{" "}
+              Create stunning product listings by removing distracting
+              backgrounds.
             </li>
             <li className="py-1 list-disc">
-              To hide financial or legal data before sharing documents.
+              <strong className="text-blue-950">
+                {" "}
+                Professional Headshots :{" "}
+              </strong>{" "}
+              Enhance portraits for resumes, LinkedIn, or other professional
+              platforms.
             </li>
             <li className="py-1 list-disc">
-              To redact confidential information from reports, contracts, or
-              legal filings.
+              <strong className="text-blue-950">
+                {" "}
+                Social Media and Marketing :{" "}
+              </strong>
+              Design eye-catching graphics and social media posts.
             </li>
             <li className="py-1 list-disc">
-              To ensure compliance with data protection laws, such as GDPR or
-              HIPAA.
+              <strong className="text-blue-950">
+                {" "}
+                Compact and Organized :{" "}
+              </strong>
+              Use transparent backgrounds for logos, collages, and other graphic
+              designs.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* How to Remove Backgrounds with Savetools.net */}
+      <div className="mt-10 lg:ml-28 sm:mx-3 lg:mx-0 mx-4">
+        <h3 className="text-blue-900 lg:text-2xl font-bold">
+          How to Remove Backgrounds with Savetools.net
+        </h3>
+        <div className="mt-5 sm:text-sm lg:text-base text-sm ml-5">
+          <ul className="text-gray-700">
+            <li className="py-1">
+              1. &nbsp; &nbsp;{" "}
+              <strong className="text-blue-950">Upload Your Image : </strong>{" "}
+              Click the upload button and choose an image from your device.
+            </li>
+            <li className="py-1">
+              2. &nbsp; &nbsp;{" "}
+              <strong className="text-blue-950">
+                {" "}
+                Automatic Processing :{" "}
+              </strong>
+              Our AI will automatically detect and remove the background.
+            </li>
+            <li className="py-1">
+              3. &nbsp; &nbsp;{" "}
+              <strong className="text-blue-950">Download Your Result : </strong>
+              Save your image with a transparent or new background.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/*Benefits of Using Savetools.net */}
+      <div className="mt-10 lg:ml-28 sm:mx-3 lg:mx-0 mx-4">
+        <h3 className="text-blue-900 lg:text-3xl font-bold">
+          Benefits of Using Savetools.net
+        </h3>
+        <div className="mt-5 sm:text-sm lg:text-base text-sm ml-5">
+          <ul className="text-gray-700">
+            <li className="py-1 list-disc">
+              <strong className="text-blue-950">Time-Saving : </strong> Get
+              professional results in just seconds.
+            </li>
+            <li className="py-1 list-disc">
+              <strong className="text-blue-950">User-Friendly : </strong> No
+              learning curve — simply upload and go.
+            </li>
+            <li className="py-1 list-disc">
+              <strong className="text-blue-950">
+                {" "}
+                Accessible from Any Device :{" "}
+              </strong>
+              Works seamlessly on desktops, tablets, and smartphones.
             </li>
           </ul>
         </div>
@@ -289,7 +287,7 @@ const RedactPdf = () => {
       {/* FAQs Section */}
       <div className="mt-20 lg:mx-10 sm:mx-4 mx-4">
         <h3 className="lg:text-3xl sm:text-2xl text-2xl font-bold lg:pl-40">
-          FAQs: Redact PDF Tool
+          Frequently Asked Questions (FAQs)
         </h3>
         <div className="flex flex-col lg:flex-row-reverse mb-5">
           {/* FAQ Image (on top for small screens, side by side for large screens) */}
@@ -341,4 +339,4 @@ const RedactPdf = () => {
   );
 };
 
-export default RedactPdf;
+export default ImageBgRemoval;

@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="mt-24 bg-customGray">
-      <div className="flex flex-row justify-between mx-52 mt-10 pt-10 pb-10">
+    <div className="mt-24 bg-customGray px-6 sm:px-10 lg:px-52">
+      <div className="flex flex-col lg:flex-row justify-between mt-10 pt-10 pb-10 gap-8 lg:gap-0">
         <div className="">
           <h3 className="font-bold text-blue-600 text-lg">SaveTools</h3>
           <ul className="pt-3 text-gray-700 text-base">

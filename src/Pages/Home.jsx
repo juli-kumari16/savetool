@@ -40,6 +40,11 @@ import Slider from "react-slick";
 import Footer from "../Components/Footer";
 import homebg from "../images/background.svg";
 import SEOComponent from "../Components/SEOComponent";
+import jpgWebP from "../images/WEBP_TO_JPG_ICON.png";
+import removeTextFromImage from "../images/remove_text_from_image.png";
+import imgBgRemoval from "../images/image_background_icon.png";
+import ExploreMore from "../Components/ExploreMore";
+import WhatsApp from "../Components/WhatsApp";
 
 const settings = {
   dots: true,
@@ -139,20 +144,20 @@ const cardData = [
     description:
       "Transform PDFs into editable PPT and PPTX slides for presentations. We make it easy for you.",
     image: ptp,
-    link: "/pdf_to_powerpoint",
+    link: "/pdf-to-powerpoint-converter",
   },
   {
     title: "PDF to Excel",
     description:
       "Extract data from PDFs directly into Excel spreadsheets in seconds.",
     image: pte,
-    link: "/pdf_to_excel",
+    link: "/pdf-to-excel-converter-online-free",
   },
   {
     title: "PowerPoint to PDF",
     description: "Convert PPT and PPTX slideshows into easy-to-view PDF files.",
     image: ptpdf,
-    link: "/powerpoint_to_pdf",
+    link: "/Convert-ppt-to-pdf",
   },
 
   // Third Row
@@ -162,28 +167,28 @@ const cardData = [
     description:
       "Make Excel spreadsheets more shareable by converting them into PDFs.",
     image: extp,
-    link: "/excel_to_pdf",
+    link: "/excel-to-pdf-converter-online-free",
   },
   {
     title: "Edit PDF",
     description:
       "Add text, images, shapes, or annotations to your PDFs. Customize font, size, and color as needed.",
     image: edtPdf,
-    link: "/edit_to_pdf",
+    link: "/edit-pdf-online",
   },
   {
     title: "PDF to JPG",
     description:
       "Convert PDF pages into JPG images or extract embedded images from PDFs.",
     image: pdfToJpg,
-    link: "/pdf_to_jpg",
+    link: "/pdf-to-jpg-converter",
   },
   {
     title: "JPG to PDF",
     description:
       "Quickly convert JPG images to PDFs with adjustable orientation and margins.",
     image: jptopdf,
-    link: "/jpg_to_pdf",
+    link: "/jpg-to-pdf-converter",
   },
 
   // Fourth Row
@@ -193,28 +198,28 @@ const cardData = [
     description:
       "Sign your documents electronically or request signatures from others.",
     image: signPdf,
-    link: "/sign_pdf",
+    link: "/sign-pdf-online",
   },
   {
     title: "Watermark",
     description:
       "Add text or image watermarks to your PDFs. Customize the transparency, typography, and position.",
     image: watermark,
-    link: "/watermark",
+    link: "/add-watermark-to-pdf",
   },
   {
     title: "Rotate PDF",
     description:
       "Rotate PDF pages to your preferred orientation. Process multiple PDFs at once.",
     image: rotatePdf,
-    link: "/rotate_pdf",
+    link: "/rotate-pdf-online",
   },
   {
     title: "HTML to PDF",
     description:
       "Convert HTML webpages into PDFs by pasting the URL and clicking convert.",
     image: htopdf,
-    link: "/html_to_pdf",
+    link: "/convert-html-to-pdf",
   },
 
   // Fifth Row
@@ -224,27 +229,27 @@ const cardData = [
     description:
       "Remove password protection to unlock your PDF files and enable unrestricted access.",
     image: unlockPdf,
-    link: "/unlock_pdf",
+    link: "/unlock-pdf",
   },
   {
     title: "Protect PDF",
     description:
       "Secure your PDFs with a password to prevent unauthorized access.",
     image: protectPdf,
-    link: "/protect_pdf",
+    link: "/protect-pdf",
   },
   {
     title: "Organize PDF",
     description: "Rearrange, delete, or add pages to your PDF files as needed.",
     image: organizePdf,
-    link: "/organize_pdf",
+    link: "/organize-pdf",
   },
   {
     title: "PDF to PDF/A",
     description:
       "Convert PDFs to the ISO-standardized PDF/A format for long-term preservation.",
     image: pdf_A,
-    link: "/convert_pdf_to_pdfa",
+    link: "/convert-pdf-to-pdfa",
   },
 
   // Six Row
@@ -253,28 +258,28 @@ const cardData = [
     title: "Repair PDF",
     description: "Fix damaged or corrupted PDFs and recover lost data easily.",
     image: repairPdf,
-    link: "/repair_pdf",
+    link: "/repair-pdf-online",
   },
   {
     title: "Add Page Numbers",
     description:
       "Insert page numbers into your PDFs. Customize position, size, and font to suit your needs.",
     image: pageno,
-    link: "/add_pdf_page_number",
+    link: "/add-page-numbers-in-pdf",
   },
   {
     title: "Scan to PDF",
     description:
       "Scan documents from your mobile device and save them as PDFs instantly.",
     image: scanToPdf,
-    link: "/scan_to_pdf",
+    link: "/scan-to-pdf-online",
   },
   {
     title: "OCR PDF",
     description:
       "Convert scanned PDFs into searchable and editable documents with OCR technology.",
     image: ocrPdf,
-    link: "/ocr_pdf",
+    link: "/ocr-pdf-to-searcheable-file",
   },
 
   {
@@ -282,14 +287,35 @@ const cardData = [
     description:
       "Perform side-by-side comparisons of PDFs to identify changes between file versions.",
     image: comparePdf,
-    link: "/compare_pdf",
+    link: "/compare-pdf-online",
   },
   {
     title: "Redact PDF",
     description:
       "Permanently remove sensitive information from PDFs by redacting text or graphics.",
     image: redactPdf,
-    link: "/redact_pdf",
+    link: "/redact-pdf-online",
+  },
+  {
+    title: "JPG to WebP",
+    description:
+      "convert JPG images to WebP format effortlessly. Optimize your website’s performance with this step-by-step guide to faster-loading, high-quality visuals.",
+    image: jpgWebP,
+    link: "/jpg-to-webp",
+  },
+  {
+    title: "Image background removal",
+    description:
+      "Image background remover online free tools. Savetools.net remove your image back perfectly in few seconds. Try it now. No registration required! ",
+    image: imgBgRemoval,
+    link: "/image-background-remover",
+  },
+  {
+    title: "Remove Text from an Image",
+    description:
+      "Easily remove unwanted text from your images / Photos with Savetools.net's free online tool. No software needed, just upload and erase text in seconds.",
+    image: removeTextFromImage,
+    link: "/remove-text-from-an-Image",
   },
 ];
 
@@ -374,54 +400,56 @@ const Home = () => {
         }}
       >
         {/* Page Start Here */}
-        <div className="mt-3 justify-center">
-          <h1 className="font-bold text-4xl text-center text-gray-800 font-sans py-5">
+        <div className="mt-3 flex flex-col items-center justify-center text-center sm:mx-auto lg:mx-auto px-4 sm:px-10">
+          <h1 className="font-bold lg:text-4xl text-2xl text-gray-800 font-sans py-5">
             Free online converter tools for your Office work
           </h1>
-          <p className="text-center mt-2 text-lg text-gray-800 font-playfair">
+          <p className="mt-2 lg:text-lg text-gray-800 font-playfair text-justify max-w-[700px] leading-relaxed">
             Savetools is a comprehensive online platform offering converter
-            tools to simplify your office work.
-            <br /> Effortlessly convert Word files to PDF, PDF to Word, edit
-            PDFs, split PDFs, rotate, unlock, and add watermarks <br /> to your
-            PDFs and many more tools. It's completely free, secure, and free
-            from pop-ups or malware.
+            tools to simplify your office work. Effortlessly convert Word files
+            to PDF, PDF to Word, edit PDFs, split PDFs, rotate, unlock, and add
+            watermarks to your PDFs and many more tools. It's completely free,
+            secure, and free from pop-ups or malware.
           </p>
         </div>
-        {/* Cards Start Here */}
-        {/* first Row */}
-        <div>
-          <div className="grid grid-cols-12 sm:grid-cols-3 md:grid-cols-12 gap-2 mx-10 mt-3">
-            {cardData.map((card, cardIndex) => (
-              <div key={cardIndex} className="p-4 border rounded-lg col-span-3">
-                {/* Image Section */}
-                <Link to={card.link}>
-                  <img
-                    src={card.image}
-                    alt={card.title}
-                    className="w-10 h-auto object-cover rounded-t-lg mb-4"
-                  />
 
-                  <h3 className="font-bold text-lg py-2 group-hover:text-white text-gray-800">
-                    {card.title}
-                  </h3>
-                  <p className="text-sm text-gray-600 py-2 group-hover:text-white font-playfair">
-                    {card.description}
-                  </p>
-                </Link>
-              </div>
-            ))}
-          </div>
+        {/* Cards Start Here */}
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-2 mx-10 mt-3">
+          {cardData.map((card, cardIndex) => (
+            <div
+              key={cardIndex}
+              className="p-4 border rounded-lg md:col-span-3 sm:shadow-lg lg:shadow-none shadow-lg"
+            >
+              {/* Image Section */}
+              <Link to={card.link}>
+                <img
+                  src={card.image}
+                  alt={card.title}
+                  className="w-10 h-auto object-cover rounded-t-lg mb-4"
+                />
+                <h3 className="font-bold text-lg py-2 group-hover:text-white text-gray-800">
+                  {card.title}
+                </h3>
+                <p className="text-sm text-gray-600 py-2 group-hover:text-white font-playfair">
+                  {card.description}
+                </p>
+              </Link>
+            </div>
+          ))}
         </div>
+
         {/* Why Choose Save Tool Start Here */}
         <div className="mt-20">
-          <h2 className="text-red-600 text-center text-3xl font-bold">
+          <h2 className="text-red-600 text-center lg:text-3xl font-bold">
             Why Choose SaveTools.net?
           </h2>
+
           {/* First Row */}
-          <div className="flex flex-row mx-28 mt-10 gap-10 justify-center">
+          <div className="flex flex-col sm:flex-row flex-wrap mx-5 md:mx-28 mt-10 gap-10 justify-center">
             {/* Card 1 */}
-            <div className="flex p-4 bg-white rounded-lg shadow-lg border w-1/2 hover:bg-blue-500">
-              <div className="w-40 h-auto">
+            <div className="flex flex-col sm:flex-row p-4 bg-white rounded-lg shadow-lg border w-full md:w-[48%] hover:bg-blue-500">
+              <div className="w-20 sm:w-24 md:w-32 lg:w-44 h-auto">
                 <img
                   src={about1}
                   alt="Comprehensive Tools"
@@ -440,8 +468,8 @@ const Home = () => {
             </div>
 
             {/* Card 2 */}
-            <div className="flex p-4 bg-white rounded-lg shadow-lg border w-1/2">
-              <div className="w-28 h-auto">
+            <div className="flex flex-col sm:flex-row p-4 bg-white rounded-lg shadow-lg border w-full md:w-[48%] hover:bg-blue-500">
+              <div className="w-20 sm:w-24 md:w-32 lg:w-28 h-auto">
                 <img
                   src={about2}
                   alt="User-Friendly"
@@ -459,11 +487,12 @@ const Home = () => {
               </div>
             </div>
           </div>
+
           {/* Second Row */}
-          <div className="flex flex-row mx-28 mt-10 gap-10 justify-center">
-            {/* Card 1 */}
-            <div className="flex p-4 bg-white rounded-lg shadow-lg border w-1/2">
-              <div className="w-32 h-auto">
+          <div className="flex flex-col sm:flex-row flex-wrap mx-5 md:mx-28 mt-10 gap-10 justify-center">
+            {/* Card 3 */}
+            <div className="flex flex-col sm:flex-row p-4 bg-white rounded-lg shadow-lg border w-full md:w-[48%] hover:bg-blue-500">
+              <div className="w-20 sm:w-24 md:w-32 lg:w-32 h-auto">
                 <img
                   src={about3}
                   alt="Completely Free"
@@ -481,9 +510,9 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Card 2 */}
-            <div className="flex p-4 bg-white rounded-lg shadow-lg border w-1/2">
-              <div className="w-40 h-auto">
+            {/* Card 4 */}
+            <div className="flex flex-col sm:flex-row p-4 bg-white rounded-lg shadow-lg border w-full md:w-[48%] hover:bg-blue-500">
+              <div className="w-20 sm:w-24 md:w-32 lg:w-32 h-auto">
                 <img
                   src={about4}
                   alt="Secure and Reliable"
@@ -495,17 +524,18 @@ const Home = () => {
                   Secure and Reliable
                 </h4>
                 <p className="text-gray-600 text-sm font-playfair">
-                  Secure and Reliable: Your files are handled with the utmost
-                  care—no malware, pop-ups, or data leaks.
+                  Your files are handled with the utmost care—no malware,
+                  pop-ups, or data leaks.
                 </p>
               </div>
             </div>
           </div>
+
           {/* Third Row */}
-          <div className="flex flex-row mx-28 mt-10 gap-10 justify-center">
-            {/* Card 1 */}
-            <div className="flex p-4 bg-white rounded-lg shadow-lg border w-1/2">
-              <div className="w-28 h-auto">
+          <div className="flex flex-col sm:flex-row flex-wrap mx-5 md:mx-28 mt-10 gap-10 justify-center">
+            {/* Card 5 */}
+            <div className="flex flex-col sm:flex-row p-4 bg-white rounded-lg shadow-lg border w-full md:w-[48%] hover:bg-blue-500">
+              <div className="w-20 sm:w-24 md:w-32 lg:w-28 h-auto">
                 <img
                   src={about5}
                   alt="Fast and Efficient"
@@ -523,13 +553,13 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Card 2 */}
-            <div className="flex p-4 bg-white rounded-lg shadow-lg border w-1/2">
-              <div className="w-52 h-auto">
+            {/* Card 6 */}
+            <div className="flex flex-col sm:flex-row p-4 bg-white rounded-lg shadow-lg border w-full md:w-[48%] hover:bg-blue-500">
+              <div className="w-20 sm:w-24 md:w-32 lg:w-56 h-auto">
                 <img
                   src={about6}
                   alt="Perfect for Office / Personal Work"
-                  className="mr-4 w-full h-auto"
+                  className="w-full h-auto"
                 />
               </div>
               <div className="flex flex-col justify-center mx-5">
@@ -563,12 +593,22 @@ const Home = () => {
         </div>
 
         {/* FAQ Section  */}
-        <div className="mt-20 mx-10">
+        <div className="mt-20 lg:mx-10 sm:mx-4 mx-4">
           <div>
-            <h2 className="text-3xl font-bold pl-40">FAQs for SaveTools.net</h2>
+            <h2 className="lg:text-3xl sm:text-2xl text-2xl font-bold lg:pl-40">
+              FAQs for SaveTools.net
+            </h2>
           </div>
-          <div className="flex flex-row mb-5">
-            <div className="mx-auto p-6 w-[50%]">
+
+          {/* FAQ Section - Adjusted for responsive layout */}
+          <div className="flex flex-col lg:flex-row-reverse mb-5">
+            {/* FAQ Image (on top for small screens, side by side for large screens) */}
+            <div className="lg:w-1/2">
+              <img src={faqsimg} alt="FAQ Image" className="w-full" />
+            </div>
+
+            {/* FAQ Questions & Answers */}
+            <div className="mx-auto lg:p-6 w-full lg:w-1/2">
               {faqs.map((faq, index) => (
                 <div key={index} className="border-b border-gray-300 py-2">
                   {/* Question Section */}
@@ -591,20 +631,26 @@ const Home = () => {
                 </div>
               ))}
             </div>
-            <div className="">
-              <img src={faqsimg} alt="" className="" />
-            </div>
           </div>
-          {/* Contact Us */}
-          <div className="flex mx-20">
-            <p className="pl-40 text-2xl pr-3 font-playfair">
+
+          {/* Contact Us Section */}
+          <div className="flex lg:flex-row sm:flex-col lg:mx-20">
+            <p className="lg:pl-40 lg:text-2xl lg:pr-3 font-playfair">
               If you have more questions, feel free to reach out to us!
             </p>
-
-            <button className="bg-blue-300 border rounded px-4">
+            <button className="bg-blue-300 border rounded lg:px-4 text-sm lg:text-lg sm:text-sm mt-2 sm:block lg:inline-block">
               Contact Us
             </button>
           </div>
+        </div>
+
+        {/* Explore More */}
+        <div className="mt-10">
+          <ExploreMore />
+        </div>
+        {/* whatsapp */}
+        <div>
+          <WhatsApp />
         </div>
         {/* Footer */}
         <div>
